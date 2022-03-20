@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/view_courses"
+        android:icon="@drawable/ic_outline_folder_24"
+        android:title="@string/courses_menu"
+        android:visible="true" />
+    <item
+        android:id="@+id/view_assessments"
+        android:icon="@drawable/ic_outline_assignment_24"
+        android:title="@string/assessments_menu"
+        android:visible="true" />
+    <item
+        android:id="@+id/view_instructors"
+        android:title="@string/instructors_menu" />
+</menu>

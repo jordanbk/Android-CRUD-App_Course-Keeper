@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/delete_course"
+        android:title="@string/delete_course" />
+    <item
+        android:id="@+id/share"
+        android:title="@string/share_course_notes" />
+    <item
+        android:id="@+id/startAlert"
+        android:title="@string/set_course_start_alert" />
+    <item
+        android:id="@+id/endAlert"
+        android:title="@string/set_course_end_alert" />
+</menu>

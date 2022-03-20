@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saveBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Assessments.AddAssessmentActivity">
+
+    <TextView
+        android:id="@+id/assessmentDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/end_assessment"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentDate"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <EditText
+        android:id="@+id/assessmentDateEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:focusable="false"
+        android:minHeight="48dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/assessmentDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/assessmentDate"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentNameEdt" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleTextColor="?attr/colorAccent" />
+
+    <EditText
+        android:id="@+id/assessmentNameEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/assessmentName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/assessmentName"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/assessmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_assessment"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <TextView
+        android:id="@+id/assessmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_assessment"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <EditText
+        android:id="@+id/assessmentDateEdt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:minHeight="48dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/assessmentDate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/assessmentDate2"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentDateEdt" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_assessment_add"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentDate2"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/assessmentTypeEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/addButton_Assessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_assessment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentTypeEdt"
+        app:layout_constraintVertical_bias="0.093"
+        tools:usingOnClickInXml="true" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="62dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

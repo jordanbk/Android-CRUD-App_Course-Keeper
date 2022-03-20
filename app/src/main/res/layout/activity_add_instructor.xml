@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Instructors.AddInstructorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleTextColor="?attr/colorAccent" />
+
+    <EditText
+        android:id="@+id/instructorNameEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/instructorName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/instructorName"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/instructorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_instructor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/instructorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_instructor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <EditText
+        android:id="@+id/instructorEmailEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/instructorEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/instructorEmail"
+        app:layout_constraintTop_toBottomOf="@+id/instructorNameEdt"
+        tools:ignore="LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/instructorPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_instructor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructorEmail"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <EditText
+        android:id="@+id/instructorPhoneEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/instructorPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/instructorPhone"
+        app:layout_constraintTop_toBottomOf="@+id/instructorEmailEdt"
+        tools:ignore="TextFields"
+        android:autofillHints="000-000-0000" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SaveInstructor"
+        android:text="@string/save_assessment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructorPhoneEdt"
+        app:layout_constraintVertical_bias="0.226"
+        tools:usingOnClickInXml="true" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="72dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
